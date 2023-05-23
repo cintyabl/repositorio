@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: rgb(231, 229, 208);
+}
 @media (min-width: 1280px) {
     body {
         margin: 15px 15px;
@@ -70,8 +74,43 @@ p {
         font-size: 20px;
         align-self: center;
         margin: 40px;
+    }  
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.familia_imagenes {
+    width: 300px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.familia_imagenes img{
+    border-radius: 40px;
+    margin:15px;
+    width: 200px;
+    height: 200px;
+    }
+
+@media (min-width: 1280px) {
+    .familia_imagenes {
+        width: 600px;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;  
+    }
+    .familia_imagenes img{
+    border-radius: 40px;
+    margin:15px;
+    width: 250px;
+    height: 250px;
     }
 }
+
 
 .hover {
     background-color: blue;
